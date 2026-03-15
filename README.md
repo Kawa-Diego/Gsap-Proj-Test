@@ -2,13 +2,39 @@
 
 use
 ```
-npm i vite@latest
+npm create vite@latest [your-name-proj]
 ```
+Press 'y' to continue installation.<br>
 
+Choose you framework (React recommended) and choose your prefer language. 
+<br>
 ```
 npm i 
 ```
 
+Install Gsap using
+```
+npm i gsap @gsap/react react-responsive
+```
+
+React-responsive will help with the animation logic and the layout behavior that is based with the screen size.
+<br>
+
+Install Tailwindcss using this command:
+```
+npm i tailwindcss @tailwindcss/vite
+```
+
+To configure the plugin, read the [ESLint configuration](#expanding-the-eslint-configuration) section 
+<br>
+
+Add ``` @import 'tailwindcss' ``` inside of ```index.css```
+
+To run, use 
+```
+npm run dev
+```
+at the source files 
 
 # React + TypeScript + Vite
 
@@ -83,3 +109,7 @@ export default defineConfig([
   },
 ])
 ```
+
+
+To learn more about this lib, I recommend you to watch this tutorial of Gsap lib:
+[Master Web Animations in 2 Hours | Build an Awwwards-Level Website](https://www.youtube.com/watch?v=AW1yfBKRMKc&t=3550s)

@@ -6,6 +6,7 @@ import Art from "./components/Art.tsx";
 import Menu from "./components/Menu.tsx";
 import {ScrollTrigger, SplitText} from "gsap/all";
 import gsap from "gsap";
+import Contact from "./components/Contact.tsx";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -18,6 +19,7 @@ const App = () => {
             <About />
             <Art />
             <Menu />
+            <Contact />
         </main>
     )
 }

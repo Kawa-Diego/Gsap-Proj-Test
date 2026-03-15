@@ -138,7 +138,7 @@ const sliderLists = [
     {
         id: 1,
         name: "Classic Mojito",
-        image: "/images/drink1.png",
+        image: "./images/drink1.png",
         title: "Simple Ingredients, Bold Flavor",
         description:
             "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",

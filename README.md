@@ -1,3 +1,15 @@
+# To install the project dependencies
+
+use
+```
+npm i vite@latest
+```
+
+```
+npm i 
+```
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

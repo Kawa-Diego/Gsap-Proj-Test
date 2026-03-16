@@ -5,7 +5,7 @@ import { useRef } from "react";
 import { useMediaQuery } from "react-responsive";
 
 const Hero = () => {
-    const videoRef = useRef();
+    const videoRef = useRef(null);
 
     const isMobile = useMediaQuery({ maxWidth: 767 });
 
@@ -63,8 +63,11 @@ const Hero = () => {
             },
         });
 
+        // @ts-ignore
         videoRef.current.onloadedmetadata = () => {
+            // @ts-ignore
             tl.to(videoRef.current, {
+                // @ts-ignore
                 currentTime: videoRef.current.duration,
             });
         };

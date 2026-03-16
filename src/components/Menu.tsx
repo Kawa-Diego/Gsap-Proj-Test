@@ -1,12 +1,13 @@
 'use client';
 
-import { allCocktails } from '../../constants/index.tsx'
+import { allCocktails } from '../../constants'
 import { useRef, useState } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap';
 
 const Menu = () => {
-    const contentRef = useRef();
+
+    const contentRef = useRef(null);
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useGSAP(() => {
@@ -24,13 +25,13 @@ const Menu = () => {
 
     const totalCocktails = allCocktails.length;
 
-    const goToSlide = (index) => {
+    const goToSlide = (index: number) => {
         const newIndex = (index + totalCocktails) % totalCocktails;
 
         setCurrentIndex(newIndex);
     }
 
-    const getCocktailAt = (indexOffset) => {
+    const getCocktailAt = (indexOffset: number) => {
         return allCocktails[(currentIndex + indexOffset + totalCocktails) % totalCocktails]
     }
 
@@ -78,7 +79,7 @@ const Menu = () => {
                 </div>
 
                 <div className="cocktail">
-                    <img src={currentCocktail.image} className="object-contain"/>
+                    <img src={currentCocktail.image} className="object-contain" alt="img-cocktail"/>
                 </div>
 
                 <div className="recipe">
